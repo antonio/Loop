@@ -1,0 +1,3 @@
+https://github.com/LoopKit/Loop/pull/777
+https://github.com/LoopKit/Loop/pull/768
+https://github.com/LoopKit/Loop/pull/726
