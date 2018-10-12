@@ -1064,7 +1064,7 @@ extension LoopDataManager {
         // integral RC resets to standard RC if discrepancy > 0 and carb action is greater than carbEffectLimit in mg/dL over 30 minutes
         let currentCarbEffect = -change.start.quantity.doubleValue(for: glucoseUnit) + lastCarbOnlyGlucose.quantity.doubleValue(for: glucoseUnit)
         let scaledCarbEffect = currentCarbEffect * 30.0 / retrospectionTimeInterval // current carb effect over 30 minutes
-        let carbEffectLimit: Double = min( 200 * currentCarbRatio / currentSensitivity, 45 ) // [mg/dL] over 30 minutes
+        let carbEffectLimit: Double = min( 200 * currentCarbRatio / currentSensitivity, 20 ) // [mg/dL] over 30 minutes
         // the above line may be replaced by a fixed value if so desired
         // let carbEffectLimit = 30 was used during early IRC testing, 15 was found by some to work better for kids
         // let carbEffectLimit = 0 is the most conservative setting
