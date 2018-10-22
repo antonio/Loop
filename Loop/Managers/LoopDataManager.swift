@@ -1068,7 +1068,7 @@ extension LoopDataManager {
         // the above line may be replaced by a fixed value if so desired
         // let carbEffectLimit = 30 was used during early IRC testing, 15 was found by some to work better for kids
         // let carbEffectLimit = 0 is the most conservative setting
-        let carbEffectLimit = 15
+        let carbEffectLimit = 15.0
         
         // update overall retrospective correction
         let overallRC = retrospectiveCorrection.updateRetrospectiveCorrection(
